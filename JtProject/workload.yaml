@@ -1,0 +1,23 @@
+$schema: "1.0"
+name: "devbox-customization"
+tasks:
+  - name: choco
+    parameters:
+      package: vscode
+  - name: git-clone
+    description: Clone this repository into C:\Workspaces
+    parameters:
+      repositoryUrl: https://github.com/jaygajera17/E-commerce-project-springBoot.git
+      directory: C:\Workspaces
+  - name: choco
+    parameters:
+      package: intellijidea-community
+  - name: choco
+    parameters:
+      package: openjdk
+  - name: choco
+    parameters:
+      package: postman
+  - name: choco
+    parameters:
+      package: mysql
